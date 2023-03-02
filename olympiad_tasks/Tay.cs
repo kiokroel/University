@@ -1,4 +1,4 @@
-﻿string[] words = Console.ReadLine().Split();
+string[] words = Console.ReadLine().Split();
 string[] words2 = new string[words.Length];
 
 words2[0] = words[words.Length / 2];
