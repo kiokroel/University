@@ -28,7 +28,7 @@ for (int i = 0; i < words2.Length; i++)
     words2[i] = newword;
 }
 
-foreach (string c in words2)
+foreach (string word in words2)
 {
-    Console.Write(c + " ");
+    Console.Write(word + " ");
 }
