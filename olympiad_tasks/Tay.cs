@@ -2,7 +2,6 @@ string[] words = Console.ReadLine().Split();
 string[] words2 = new string[words.Length];
 
 words2[0] = words[words.Length / 2];
-
 int k = 1;
 for (int i = words.Length / 2 - 1; i >= 0; i--)
 {
@@ -37,5 +36,4 @@ for (int i = 0; i < words2.Length; i++)
 foreach (string c in words2)
 {
     Console.Write(c + " ");
-
 }
