@@ -17,7 +17,7 @@ for i in range(len(persons)):
         chief = persons[i]
         break
 
-
+#перебор подчиненных
 subordinates = [chief]
 for sub in subordinates:
     for i in range(len(persons)//2):
