@@ -1,5 +1,6 @@
 f = open('D:/potions.txt')
 
+# Перевод заклинания
 translate = {
     'MIX': ['MX', 'XM'],
     'WATER': ['WT', 'TW'],
@@ -7,6 +8,7 @@ translate = {
     'FIRE': ['FR', 'RF']
 }
 
+# Функция составления заклинания
 def pot(potion):
     potion = potion.split()
     potion_func = translate[potion[0]][0]
@@ -20,9 +22,10 @@ def pot(potion):
     potion_func += translate[potion[0]][1]
     return potion_func
 
-
+# Массив заклинаний
 potions = []
 
+# Перебор заклинаний
 for potion in f.readlines():
     now_potion = pot(potion.split('\n')[0])
     potions.append(now_potion)
