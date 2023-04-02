@@ -21,7 +21,7 @@ while (true)
     Console.Clear();
     if (key.Key == ConsoleKey.D1)
     {
-        Console.Write("Введите эллемент: ");
+        Console.Write("Введите элемент: ");
         stack.Push(Console.ReadLine());
         print("stack", stack);
     }
@@ -53,15 +53,15 @@ while (true)
     }
     else if (key.Key == ConsoleKey.D6)
     {
-        Console.Write("Введите эллемент: ");
+        Console.Write("Введите элемент: ");
         object a = Console.ReadLine();
         if(stack.Contains(a)) 
         {
-            Console.WriteLine("Эллемент содержится в коллекции");
+            Console.WriteLine("Элемент содержится в коллекции");
         }
         else
         {
-            Console.WriteLine("Эллемент не содержится в коллекции");
+            Console.WriteLine("Элемент не содержится в коллекции");
         }
     }
     else if (key.Key == ConsoleKey.D7)
