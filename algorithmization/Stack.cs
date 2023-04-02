@@ -12,7 +12,6 @@ void print(string name, Stack stack)
     Console.WriteLine();
 }
 
-ArrayList list = new ArrayList();
 Stack stack = new Stack();
 while (true)
 {
