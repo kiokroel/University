@@ -1,6 +1,6 @@
 import math
 from pprint import pprint
-import os
+
 
 weight_matrix = [[math.inf, 4, 5, 7, 5],
                  [8, math.inf, 5, 6, 6],
