@@ -31,10 +31,10 @@ while len(weight_matrix) != 1:
             if weight_matrix[j][i] < min_weight:
                 min_weight = weight_matrix[j][i]
                 min_index = j
-        
+        # вычитание наименьшего значения
         for j in range(len(weight_matrix)):
             weight_matrix[j][i] -= min_weight
-        # вычитание наименьшего значения
+        
         min_sum += min_weight
 
     # нахождение нуля с макс степенью
