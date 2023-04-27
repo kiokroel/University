@@ -12,11 +12,11 @@ void print(string name, List<string> list)
 List<string> list = new List<string>();
 while (true)
 {
-    Console.WriteLine("Меню \n\n1.Добавить элемент в коллекцию \n2.Добавить в список элементы из коллекции c \n3.Алгоритм двоичного поиска \n4.Индекс первого вхождения объекта \n5.Изменение порядка элементов на обратный \n6.Сортировка \n7.Очищение коллекции \n8.Количество объектов, хранящихся в коллекции \n9.Удалить часть коллекции \n10.Выход");
+    Console.WriteLine("ГЊГҐГ­Гѕ \n\n1.Г„Г®ГЎГ ГўГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ Гў ГЄГ®Г«Г«ГҐГЄГ¶ГЁГѕ \n2.Г„Г®ГЎГ ГўГЁГІГј Гў Г±ГЇГЁГ±Г®ГЄ ГЅГ«ГҐГ¬ГҐГ­ГІГ» ГЁГ§ ГЄГ®Г«Г«ГҐГЄГ¶ГЁГЁ c \n3.ГЂГ«ГЈГ®Г°ГЁГІГ¬ Г¤ГўГ®ГЁГ·Г­Г®ГЈГ® ГЇГ®ГЁГ±ГЄГ  \n4.Г€Г­Г¤ГҐГЄГ± ГЇГҐГ°ГўГ®ГЈГ® ГўГµГ®Г¦Г¤ГҐГ­ГЁГї Г®ГЎГєГҐГЄГІГ  \n5.Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ ГЇГ®Г°ГїГ¤ГЄГ  ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г­Г  Г®ГЎГ°Г ГІГ­Г»Г© \n6.Г‘Г®Г°ГІГЁГ°Г®ГўГЄГ  \n7.ГЋГ·ГЁГ№ГҐГ­ГЁГҐ ГЄГ®Г«Г«ГҐГЄГ¶ГЁГЁ \n8.ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЎГєГҐГЄГІГ®Гў, ГµГ°Г Г­ГїГ№ГЁГµГ±Гї Гў ГЄГ®Г«Г«ГҐГЄГ¶ГЁГЁ \n9.Г“Г¤Г Г«ГЁГІГј Г·Г Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГЁ \n10.Г‚Г»ГµГ®Г¤");
     string key = Console.ReadLine();
     if (key == "1")
     {
-        Console.WriteLine("Введите элемент");
+        Console.WriteLine("Г‚ГўГҐГ¤ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІ");
         list.Add(Console.ReadLine());
         print("list", list);
     }
@@ -24,11 +24,11 @@ while (true)
     {
         List<string> c = new List<string>();
         string key_2;
-        Console.WriteLine("Введите элементы коллекции c");
+        Console.WriteLine("Г‚ГўГҐГ¤ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» ГЄГ®Г«Г«ГҐГЄГ¶ГЁГЁ c");
         while (true)
         {
             c.Add(Console.ReadLine());
-            Console.WriteLine("1.Продолжить \n2.Выход");
+            Console.WriteLine("1.ГЏГ°Г®Г¤Г®Г«Г¦ГЁГІГј \n2.Г‚Г»ГµГ®Г¤");
             key_2 = Console.ReadLine();
             if (key_2 == "1")
             {
@@ -40,7 +40,7 @@ while (true)
             }
             else
             {
-                Console.WriteLine("Неизвестная команда");
+                Console.WriteLine("ГЌГҐГЁГ§ГўГҐГ±ГІГ­Г Гї ГЄГ®Г¬Г Г­Г¤Г ");
                 break;
             }
             Console.Clear();
@@ -52,8 +52,8 @@ while (true)
     }
     else if (key == "3")
     {
-        Console.WriteLine("Укажите элемент");
-        Console.WriteLine("Индекс элемента: " + list.BinarySearch(Console.ReadLine()));
+        Console.WriteLine("Г“ГЄГ Г¦ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІ");
+        Console.WriteLine("Г€Г­Г¤ГҐГЄГ± ГЅГ«ГҐГ¬ГҐГ­ГІГ : " + list.BinarySearch(Console.ReadLine()));
     }
     else if (key == "4")
     {
@@ -80,7 +80,7 @@ while (true)
     }
     else if (key == "9")
     {
-        Console.WriteLine("Введите начальный индекс и количество элементов которые вы хотите удалить");
+        Console.WriteLine("Г‚ГўГҐГ¤ГЁГІГҐ Г­Г Г·Г Г«ГјГ­Г»Г© ГЁГ­Г¤ГҐГЄГ± ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў ГЄГ®ГІГ®Г°Г»ГҐ ГўГ» ГµГ®ГІГЁГІГҐ ГіГ¤Г Г«ГЁГІГј");
         list.RemoveRange(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
         print("list", list);
     }
@@ -90,9 +90,9 @@ while (true)
     }
     else
     {
-        Console.WriteLine("Неизвестная команда");
+        Console.WriteLine("ГЌГҐГЁГ§ГўГҐГ±ГІГ­Г Гї ГЄГ®Г¬Г Г­Г¤Г ");
     }
-    Console.WriteLine("Нажмите любую клавишу");
+    Console.WriteLine("ГЌГ Г¦Г¬ГЁГІГҐ Г«ГѕГЎГіГѕ ГЄГ«Г ГўГЁГёГі");
     Console.ReadKey();
     Console.Clear();
 }
