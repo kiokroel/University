@@ -2,9 +2,9 @@ using System.Collections;
 
 void print(string name, SortedList list)
 {
-    ICollection с = list.Keys;
+    ICollection СЃ = list.Keys;
     Console.WriteLine(name + ":");
-    foreach (string str in с)
+    foreach (string str in СЃ)
     {
         Console.WriteLine(str + ": " + list[str]);
     }
@@ -13,71 +13,71 @@ void print(string name, SortedList list)
 SortedList list = new SortedList();
 while (true)
 {
-    Console.WriteLine("Меню \n\n1.Добавить элемент в коллекцию \n2.Проверка на наличие ключа \n3.Проверка на наличие значения\n4.Ключ по индексу \n5.Значение по индексу \n6.Индекс ключа \n7.Индекс значения\n8.Смена значения по индексу \n9.Удалить элемент по ключу \n10.Очищение коллекции \n11.Выход");
+    Console.WriteLine("РњРµРЅСЋ \n\n1.Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚ РІ РєРѕР»Р»РµРєС†РёСЋ \n2.РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ РєР»СЋС‡Р° \n3.РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ Р·РЅР°С‡РµРЅРёСЏ\n4.РљР»СЋС‡ РїРѕ РёРЅРґРµРєСЃСѓ \n5.Р—РЅР°С‡РµРЅРёРµ РїРѕ РёРЅРґРµРєСЃСѓ \n6.РРЅРґРµРєСЃ РєР»СЋС‡Р° \n7.РРЅРґРµРєСЃ Р·РЅР°С‡РµРЅРёСЏ\n8.РЎРјРµРЅР° Р·РЅР°С‡РµРЅРёСЏ РїРѕ РёРЅРґРµРєСЃСѓ \n9.РЈРґР°Р»РёС‚СЊ СЌР»РµРјРµРЅС‚ РїРѕ РєР»СЋС‡Сѓ \n10.РћС‡РёС‰РµРЅРёРµ РєРѕР»Р»РµРєС†РёРё \n11.Р’С‹С…РѕРґ");
     string key = Console.ReadLine();
     if (key == "1")
     {
-        Console.WriteLine("Введите ключ и значение");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РєР»СЋС‡ Рё Р·РЅР°С‡РµРЅРёРµ");
         list.Add(Console.ReadLine(), Console.ReadLine());
         print("list", list);
     }
     else if (key == "2")
     {
-        Console.WriteLine("Введите ключ");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РєР»СЋС‡");
         if (list.ContainsKey(Console.ReadLine()))
         {
-            Console.WriteLine("Ключ принадлежит коллекции");
+            Console.WriteLine("РљР»СЋС‡ РїСЂРёРЅР°РґР»РµР¶РёС‚ РєРѕР»Р»РµРєС†РёРё");
         }
         else
         {
-            Console.WriteLine("Ключ не принадлежит коллекции");
+            Console.WriteLine("РљР»СЋС‡ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ РєРѕР»Р»РµРєС†РёРё");
         }
     }
     else if (key == "3")
     {
-        Console.WriteLine("Введите значение");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ");
         if (list.ContainsValue(Console.ReadLine()))
         {
-            Console.WriteLine("Значение принадлежит коллекции");
+            Console.WriteLine("Р—РЅР°С‡РµРЅРёРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ РєРѕР»Р»РµРєС†РёРё");
         }
         else
         {
-            Console.WriteLine("Значение не принадлежит коллекции");
+            Console.WriteLine("Р—РЅР°С‡РµРЅРёРµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ РєРѕР»Р»РµРєС†РёРё");
         }
     }
     else if (key == "4")
     {
-        Console.WriteLine("Введите индекс");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ");
         Console.WriteLine(list.GetKey(int.Parse(Console.ReadLine())));
         print("list", list);
     }
     else if (key == "5")
     {
-        Console.WriteLine("Введите индекс");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ");
         Console.WriteLine(list.GetByIndex(int.Parse(Console.ReadLine())));
         print("list", list);
     }
     else if (key == "6")
     {
-        Console.WriteLine("Введите ключ");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РєР»СЋС‡");
         Console.WriteLine(list.IndexOfKey(Console.ReadLine()));
         print("list", list);
     }
     else if (key == "7")
     {
-        Console.WriteLine("Введите значение");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ");
         Console.WriteLine(list.IndexOfValue(Console.ReadLine()));
         print("list", list);
     }
     else if (key == "8")
     {
-        Console.WriteLine("Введите индекс");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ");
         list.SetByIndex(int.Parse(Console.ReadLine()), Console.ReadLine());
         print("list", list);
     }
     else if (key == "9")
     {
-        Console.WriteLine("Введите ключ");
+        Console.WriteLine("Р’РІРµРґРёС‚Рµ РєР»СЋС‡");
         list.Remove(Console.ReadLine());
         print("list", list);
     }
@@ -92,9 +92,9 @@ while (true)
     }
     else
     {
-        Console.WriteLine("Неизвестная команда");
+        Console.WriteLine("РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРѕРјР°РЅРґР°");
     }
-    Console.WriteLine("Нажмите любую клавишу");
+    Console.WriteLine("РќР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ");
     Console.ReadKey();
     Console.Clear();
 }
