@@ -75,7 +75,7 @@ for k in range(4):
     # вычитание
     for i in range(len(vertexes)-1):
         weight_matrix[vertexes[i] - 1][vertexes[i + 1] - 1] -= min_bandwidth
-        # если дуга насыщенная убираю путь из точки i в i + 1 и меняю значени на inf
+        # если дуга насыщенная убираем путь из точки i в i + 1 и меняем значени на inf
         if weight_matrix[vertexes[i] - 1][vertexes[i + 1] - 1] == 0:
             weight_matrix[vertexes[i] - 1][vertexes[i + 1] - 1] = math.inf
             matrix_Dijkstra[vertexes[i] - 1][vertexes[i + 1] - 1] = math.inf
