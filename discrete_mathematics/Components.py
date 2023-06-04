@@ -24,7 +24,7 @@ while nodes:
             if matrix[nod-1][i] == 1 and (i + 1 not in currents_comp):
                 currents_comp.append(i + 1)
                 nodes.remove(i)
-    components.append(set(currents_comp))
+    components.append(currents_comp)
 
 print(components)
 
